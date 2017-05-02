@@ -56,13 +56,13 @@ test: &TEST
 
 production:
   adapter: mysql2
-  reconnect: false
+  #reconnect: false
   database: depot_production
   pool: 5
   username: username
   password: password
-  host: localhost
-  socket: /var/run/mysqld/mysql.sock
+  #host: localhost
+  #socket: /var/run/mysqld/mysql.sock
 
 cucumber:
   <<: *TEST
