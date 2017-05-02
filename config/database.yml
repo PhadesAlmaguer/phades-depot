@@ -63,6 +63,7 @@ production:
   username: username
   password: password
   host: localhost
+  socket: /var/run/mysqld/mysql.sock
 
 cucumber:
   <<: *TEST
