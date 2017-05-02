@@ -55,6 +55,7 @@ test: &TEST
   password: 1234
 
 production:
+  adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
 
 cucumber:
