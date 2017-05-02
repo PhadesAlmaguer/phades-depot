@@ -55,14 +55,7 @@ test: &TEST
   password: 1234
 
 production:
-  adapter: mysql2
-  #reconnect: false
-  database: depot_production
-  pool: 5
-  username: username
-  password: password
-  #host: localhost
-  #socket: /var/run/mysqld/mysql.sock
+  url: <%= ENV['DATABASE_URL'] %>
 
 cucumber:
   <<: *TEST
